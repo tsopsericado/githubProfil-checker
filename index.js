@@ -1,14 +1,12 @@
-
-
 const fetchGithubUser = async () => {
-  let username = document.getElementById("searchInput").value;
+  let username = document.getElementById("search-input").value;
 
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
 
   if (data.messsage == "Not Found") {
     alert(data.messsage);
-  }else {
+  } else {
     document.getElementById("userDetails").innerHTML = `
                 <div class="profile">
             <div class="profile-image">
@@ -74,6 +72,4 @@ const fetchGithubUser = async () => {
         </div>
     `;
   }
-}
-
-
+};
