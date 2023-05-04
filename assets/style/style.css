@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css2?family=poppins:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -14,11 +14,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.user-form {
-  width: 100%;
-  max-width: 700px;
 }
 
 .container {
@@ -135,15 +130,11 @@ body {
 }
 
 @media (max-width: 500px) {
-  .profile {
-    flex-direction: column;
-    align-items: center;
+  .stats {
   }
+
   .media {
     display: flex;
-    flex: ;
-  }
-  .user-info {
-    margin-left: 0;
+    flex-direction: row;
   }
 }
