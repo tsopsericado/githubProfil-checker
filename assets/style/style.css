@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   background-color: #d15e41;
   background-image: linear-gradient(
     315deg,
@@ -25,6 +25,7 @@ body {
     #a23b72 37%,
     #2e86ab 100%
   );
+
   box-shadow: 0 5px 10px #9aa0b90d, 0 15px 40px #0000001a;
   border: none;
   border-radius: 10px;
@@ -128,9 +129,13 @@ body {
   margin-left: 4px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 485px) {
   .media {
     display: flex;
     flex-direction: row;
+  }
+
+  .profile-image {
+    display: show;
   }
 }
