@@ -1,21 +1,19 @@
 @import url("http://fonts.googleapis.com/css2?family=poppins:wght@100;300;400;500;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  letter-spacing: 0.5px;
+  font-family: "poppins", sans-serif;
 }
 
 body {
-  background-color: #293039;
+  background-color: #465467ef;
   color: #fff;
-  font-family: "poppins", sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
 }
 
 .user-form {
@@ -23,9 +21,8 @@ body {
   max-width: 700px;
 }
 
-.user-form input {
-  width: 100%;
-  display: block;
+.container {
+  width: 80%;
   background-color: #d15e41;
   background-image: linear-gradient(
     315deg,
@@ -44,81 +41,109 @@ body {
   font-size: 1.1rem;
 }
 
-.user-form input:focus {
+.searchContainer {
+  background: #1e2b48;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchContainer input {
+  background-color: transparent;
+  border: none;
+  width: 80%;
   outline: none;
+  color: white;
+  font-size: 15px;
 }
 
-.user-form input::placeholder {
+.searchContainer button {
+  background-color: #007bff;
   color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
 }
 
-.card {
-  min-width: 800px;
-  background-color: #d15e41;
-  background-image: linear-gradient(
-    315deg,
-    #d15e41 0%,
-    #a23b72 37%,
-    #2e86ab 100%
-  );
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+.detailsContainer {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #1e2b48;
+  padding: 20px 25px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 4px solid #293039;
+  height: 150px;
+  width: 150px;
+}
+
+.profile-image-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-details {
+  padding: 10px;
+  width: 25rem;
+}
+
+.username {
+  font-size: 13px;
+  color: #007bff;
+}
+
+.bio {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.stats {
+  background: #141d2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.media p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.media-name {
+  color: gainsboro;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+@media (max-width: 500px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .media {
     display: flex;
-    padding: 3rem;
-    margin: 0 1.5rem;
-}
-
-.avatar {
-    border-radius: 10%;
-    border: 4px solid #293039;
-    height: 150px;
-    width: 150px;
-}
-
-.user-info {
-   color: #fff;
-   margin-left: 2rem; 
-}
-
-.user-info h2 {
-    margin-top: 0;
-}
-
-.user-info ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    min-width: 400px;
-}
-
-.user-info ul li strong {
-    font-size: 0.9rem;
-    margin-left: 0.5rem;
-}
-
-.repo {
-    text-decoration: none;
-    color: #fff;
-    background-color: #293039;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    padding: 0.25rem 0.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5px;
-    display: inline-block;
-}
-
-@media (max-width:500px){
-    .card{
-        flex-direction: column;
-        align-items: center;
-    }
-    .user-form {
-        min-width: 400px;
-    }
-    .user-info {
-        margin-left: 0;
-    }
+    flex: ;
+  }
+  .user-info {
+    margin-left: 0;
+  }
 }
