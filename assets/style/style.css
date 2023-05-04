@@ -25,9 +25,7 @@ body {
     #a23b72 37%,
     #2e86ab 100%
   );
-
   box-shadow: 0 5px 10px #9aa0b90d, 0 15px 40px #0000001a;
-  
   border: none;
   border-radius: 10px;
   color: white;
@@ -37,7 +35,7 @@ body {
   font-size: 1.1rem;
 }
 
-.searchContainer {
+.search-container {
   background: #1e2b48;
   padding: 10px;
   border-radius: 10px;
@@ -46,7 +44,7 @@ body {
   justify-content: space-between;
 }
 
-.searchContainer input {
+.search-container input {
   background-color: transparent;
   border: none;
   width: 80%;

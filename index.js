@@ -7,7 +7,7 @@ const fetchGithubUser = async () => {
   if (data.messsage == "Not Found") {
     alert(data.messsage);
   } else {
-    document.getElementById("userDetails").innerHTML = `
+    document.getElementById("user-details").innerHTML = `
                 <div class="profile">
             <div class="profile-image">
                 <img class="profile-image-icon" src="${data.avatar_url}" />
