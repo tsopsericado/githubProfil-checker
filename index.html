@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>github Profil search</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profil Search</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Github Profil Search</h1>
+    <div class="search-container">
+      <input type="text"  id="search-input" placeholder="Search a GitHub" />
+      <button onclick="fetchGithubUser()">Search</button> 
+    </div>
+    <div class="details-container" id="user-details">
+
+    </div>
+    </div>
+
+    <!-- axios lib js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- script js -->
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
