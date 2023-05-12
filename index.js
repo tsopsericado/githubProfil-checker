@@ -1,12 +1,15 @@
+// fetching data from github api
 const fetchGithubUser = async () => {
   let username = document.getElementById("search-input").value;
 
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
 
+  // returned message when a githib username is searched
   if (data.messsage == "Not Found") {
     alert(data.messsage);
   } else {
+    //get users infos
     document.getElementById("user-details").innerHTML = `
                 <div class="profile">
             <div class="profile-image">
