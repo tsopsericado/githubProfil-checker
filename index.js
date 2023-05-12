@@ -9,14 +9,14 @@ const fetchGithubUser = async () => {
   if (data.messsage == "Not Found") {
     alert(data.messsage);
   } else {
-    //get users infos
+    //Display data fetched 
     document.getElementById("user-details").innerHTML = `
-                <div class="profile">
+           <div class="profile">
             <div class="profile-image">
                 <img class="profile-image-icon" src="${data.avatar_url}" />
             </div>
             <div class="profile-details">
-                <h2 class="name">${data.name}</h2>
+                <h2 class="name"><a href="https://github.com/${data.login}" target="_blanc">${data.name}</a></h2>
                 <p class="username">@${data.login}</p>
                 <p class="bio">${
                   data.bio ? data.bio : "This account don't have bio"
